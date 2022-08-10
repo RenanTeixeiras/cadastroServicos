@@ -1,0 +1,133 @@
+body {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.cadastrarNovo {
+    display: none;
+}
+
+.Novo {
+  border: 2px solid;
+  height: 250px;
+  padding-top: 20px;
+}
+
+.servicosExecutados {
+    display: none;
+}
+.servicosRealizados {
+  display: none;
+}
+.botaoGravar {
+    display: none;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    ;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    height: 30px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .inputs {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #f4511e;
+  }
+
+.table {
+  margin-left: 30px;
+  padding: 20px;
+  height: 180px;
+}
+
+.table tr {
+  background-color: #eb44159c;
+  border: 2px solid;
+}
+
+
+.voltar {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  height: 80px;
+}
+
+.voltar span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.voltar span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.voltar:hover span {
+  padding-right: 25px;
+}
+
+.voltar:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.botaovoltar {
+  margin-left: 800px;
+  margin-top: 100px;
+}
+#servRealizados {
+  display:none;
+}

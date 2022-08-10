@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 id="cadastro">
+
+        <link rel="stylesheet" href="style.css">
+    </h1>
+    <title>Cadastro Serviço</title>
+</head>
+<body onload='mostrarDadosServicos();mostrarDadosObras(); ExibirExecutadosNoSite(); mostrarServicosRealizados()'>
+    <div class="botoes">
+        <button onclick="novoCadastro()" class="cadastrarNovo"><span>CADASTRAR NOVOS DADOS</span></button>
+        <button onclick="resetarValoresExecutados();" class="cadastrarNovo"><span>Resetar</span></button> 
+        <div class="Novo">
+            <h3>Cadastrar o Serviço</h3>
+            <input type="text" placeholder="Serviço" id="serviço" class="inputs">
+            <button class="button" onclick="gravarDadosServicos();retornar();document.location.reload()"><span>Salvar</span></button>
+            <h3>Informe a Obra</h3>
+            <input type="text" placeholder="Obra" id="obra" class="inputs">
+            <button class="button" onclick="gravarDadosObras();retornar();document.location.reload()"><span>Salvar</span></button>
+        </div>
+        <button onclick="novoRealizado()" class="servicosRealizados"><span>CADASTRAR REALIZADOS</span></button>
+
+    </div>
+    <div class="servicosExecutados">
+        <h3>Quantidade Executada</h3>
+        <input id="quantidade" type="text" placeholder="Informe a quantidade executada" style="width: 200px;" class="inputs">
+        <!-- <input id="idDoExecutado" type="text" placeholder="Id do executado"> -->
+        <h3>Escolha o serviço</h3>
+            <form action="">
+                <select id = 'servicos' name ="Servicos" placeholder="Selecione o serviço" style="width: 200px;">
+                    <option>Escolha o serviço: </option>
+                </select>
+            </form>
+                <h3>Escolha a Obra</h3>
+                <form action="">
+                    <select id="obras"name ="obras" placeholder="Selecione a obra" style="width: 200px;">
+                        <option>Escolha a obra: </option>
+                    </select>
+                </form>
+
+    </div>
+            <br><br>
+            <button class= "botaoGravar"onclick="gravarDadosExecutados();document.location.reload()" ><span>Gravar</span>  </button>
+            <!-- <button onclick="atualizarMetragem();document.location.reload()">Atualizar</button> -->
+        <h3 style="display:none">Link do Drive para o anexo</h3>
+        <input type="text" placeholder="Cole o link aqui!" class="inputs" style="display:none">
+        <form action="">
+                <select id = 'servRealizados' style="width: 480px;">
+                    <option><h1> </h1></option>
+                </select>
+            </form>
+        <h1>Total Executado nas obras: </h1>
+    <div class="tabela">
+        <table id="tabela" class="table">
+           
+        </table>
+        <script src="dataBase.js"></script>
+    </div>
+    <div class="botaovoltar">
+        <button onclick="document.location.reload()" class="voltar"><span>Voltar</span></button>
+
+    </div>
+    
+</body>
+</html>
